@@ -1,0 +1,17 @@
+# Kubernetes Components
+
+[Documentation](https://kubernetes.io/docs/concepts/overview/components/)
+
+**Control Plane Components**
+
+- kube-apiserver
+- etcd
+- kube-scheduler
+- kube-controller-manager
+- cloud-controller-manager
+
+**Node Components**
+
+- kubelet
+- kube-proxy
+- Container runtime
