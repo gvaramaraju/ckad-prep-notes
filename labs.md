@@ -55,3 +55,17 @@
 #### Scale Replica Set
 
 `kubectl scale rs nginx-rs --replicas=10`
+
+## Deployments
+
+#### Get deployments
+
+`kubectl get deployments`
+
+#### Get image used in deployment
+
+`kubectl get deployment nginx-deployment -o yaml | grep image`
+
+#### SCale deployment
+
+`kubectl scale deployment nginx-deployment --replicas=10`
