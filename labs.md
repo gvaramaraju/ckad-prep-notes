@@ -69,3 +69,13 @@
 #### SCale deployment
 
 `kubectl scale deployment nginx-deployment --replicas=10`
+
+## Namespaces
+
+#### Get Namespaces
+
+`kubectl get ns`
+
+#### Create Namespace
+
+`kubectl create ns new-ns`
