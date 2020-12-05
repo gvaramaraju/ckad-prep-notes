@@ -1,3 +1,5 @@
+## PODS
+
 #### Get pod in default namespace
 
 `kubectl get pods`
@@ -30,8 +32,26 @@
 #### Creat pod redis using definition file
 
 `kubectl run redis --image=redis --dry-run=client -o yaml > redis.yml`
-`kubect create -f redis.yml`
+`kubectl create -f redis.yml`
 
 #### Edit pod image name
 
 `kubectl edit pod nginx`
+
+## REPLICA SETS
+
+#### Get Replica Sets
+
+`kubectl get rs`
+
+#### Details of Replica Set
+
+`kubectl get rs nginx-rs -o yaml`
+
+#### Status of Replica Set
+
+`kubectl describe rs nginx-rs`
+
+#### Scale Replica Set
+
+`kubectl scale rs nginx-rs --replicas=10`
